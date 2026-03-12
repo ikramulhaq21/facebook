@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1280px-Facebook_f_logo_%282019%29.svg.png" width="40">
+            
+        </h1>
+        <h1>facebook</h1>
+    </header>
+
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('history')">History</button>
+        <button onclick="showSection('journey')">Journey</button>
+        <button onclick="showSection('features')">Features</button>
+        <button onclick="showSection('impact')">Contribution</button>
+        <button onclick="showFact()">Show Fact <br>[click again to see more]</button>
+    </nav>
+
+    <div id="factBox"></div>
+
+    <section id="home" class="active">
+        <h2>What is Facebook?</h2>
+        <p>
+            Facebook is a social networking website that allows people to connect with friends,
+            family and communities around the world. Users can share photos, videos, messages
+            and updates about their daily life.
+        </p>
+
+        <h2>How to Use Facebook?</h2>
+        <p>
+            Users can create a personal profile and add friends. After adding friends they can
+            post updates, share photos, send messages and join groups. People can also like and
+            comment on posts shared by others.
+        </p>
+
+        <h2>How to Create a Facebook Account?</h2>
+        <ol>
+            <li>
+                Go to the
+                <a href="https://www.facebook.com" target="_blank">Facebook Website</a>
+            </li>
+
+            <li>
+                Click on
+                <a href="https://www.facebook.com/r.php" target="_blank">Sign Up</a>
+            </li>
+
+            <li>Enter your name, email or phone number and password.</li>
+            <li>Select your date of birth and gender.</li>
+            <li>Click Create Account.</li>
+            <li>Verify your email or phone number.</li>
+        </ol>
+    </section>
+
+    <section id="history">
+        <h2>History</h2>
+        <p>
+            Facebook was created in 2004 by Mark Zuckerberg and his friends at Harvard University.
+            The website was first developed for college students. Within a short time it became
+            popular among universities and later opened for the public.
+            Today Facebook is one of the biggest social networking platforms in the world.
+        </p>
+    </section>
+
+    <section id="journey">
+        <h2>Journey</h2>
+        <ul>
+            <li>2004 - Facebook launched at Harvard.</li>
+            <li>2005 - Expanded to other universities.</li>
+            <li>2006 - Opened for everyone above 13 years.</li>
+            <li>2012 - Reached 1 billion users.</li>
+            <li>2021 - Company name changed to Meta.</li>
+        </ul>
+    </section>
+
+    <section id="features">
+        <h2>Main and Important Features</h2>
+        <ul>
+            <li>User Profiles</li>
+            <li>Friend Requests</li>
+            <li>News Feed</li>
+            <li>Photo and Video Sharing</li>
+            <li>Messenger Chat</li>
+            <li>Pages and Groups</li>
+        </ul>
+    </section>
+
+
+    <section id="impact">
+        <h2>Contribution</h2>
+        <p>
+            Facebook helps people connect with friends and family around the world.
+            Businesses use Facebook to promote products and services globally.
+            Many communities use it for sharing information, education and social awareness.
+        </p>
+    </section>
+
+    <script>
+        function hideAll() {
+            var sections = document.querySelectorAll("section");
+            sections.forEach(function (section) {
+                section.classList.remove("active");
+            });
+            document.getElementById("factBox").style.display = "none";
+        }
+
+        function showSection(id) {
+            hideAll();
+            document.getElementById(id).classList.add("active");
+        }
+
+        var facts = [
+            "Facebook was launched in 2004.",
+            "Facebook was first limited to Harvard students.",
+            "Facebook has billions of users worldwide.",
+            "The company changed its name to Meta in 2021.",
+            "Messenger is one of the most popular messaging apps."
+        ];
+
+        function showFact() {
+            hideAll();
+            var number = Math.floor(Math.random() * facts.length);
+            var factBox = document.getElementById("factBox");
+            factBox.style.display = "block";
+            factBox.innerHTML = facts[number];
+        }
+    </script>
+
+
+</body>
+
+</html>
