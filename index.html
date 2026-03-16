@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Facebook</title>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -159,20 +161,8 @@
         </div>
     </section>
 
-    <!--
-    <section id="impact">
-        <h2>Contribution</h2>
-
-        <p>
-            Facebook helps people connect with friends and family around the world.
-            Businesses use Facebook to promote products and services globally.
-            Communities also use Facebook for education, communication and social awareness.
-        </p>
-    </section>
-    -->
-
     <script>
-
+        
         function hideAll() {
             var sections = document.querySelectorAll("section");
             sections.forEach(function (section) {
@@ -180,7 +170,6 @@
             });
             document.getElementById("factBox").style.display = "none";
         }
-
 
         function showSection(id) {
             hideAll();
@@ -194,7 +183,6 @@
             "The company changed its name to Meta in 2021.",
             "Messenger is one of the most popular messaging apps."
         ];
-
 
         function showFact() {
             hideAll();
