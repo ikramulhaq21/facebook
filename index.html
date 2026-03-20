@@ -16,7 +16,7 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1280px-Facebook_f_logo_%282019%29.svg.png" width="40" />
         </h1>
 
-        <h1>Facebook</h1>
+        <h1>facebook</h1>
     </header>
 
     <nav>
@@ -24,7 +24,7 @@
         <button onclick="showSection('history')">History</button>
         <button onclick="showSection('journey')">Journey</button>
         <button onclick="showSection('features')">Features</button>
-        <button onclick="showSection('technologies')">Technologies</button>
+        <button onclick="showSection('contributions')">Contributions</button>
         <!-- <button onclick="showSection('impact')">Contribution</button> -->
         <button onclick="showFact()">Show Fact <br />[click again to see more]</button>
     </nav>
@@ -35,9 +35,9 @@
         <h2>What is Facebook?</h2>
 
         <p>
-            Facebook is a social networking website that allows people to connect with
-            friends, family and communities around the world. Users can share photos,
-            videos, messages and updates about their daily life.
+            <li>Facebook is an American social networking service owned by the American technology conglomerate Meta Platforms.</li>
+            <li>It was founded in 2004 by Mark Zuckerberg, along with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes.</li>
+            <li>The name Facebook derives from the face book directories often given to American university students.</li>
         </p>
 
         <h2>How to Use Facebook?</h2>
@@ -72,11 +72,14 @@
         <h2>History</h2>
 
         <p>
-            Facebook was created in 2004 by Mark Zuckerberg and his friends at Harvard
-            University. The website was first developed for college students. Within a
-            short time it became popular among universities and later opened for the
-            public. Today Facebook is one of the biggest social networking platforms
-            in the world.
+            Facebook started as a college project by Mark Zuckerberg.
+            Before it, he created a site called Facemash at Harvard University.
+            In 2004, he launched “TheFacebook” with help from friends, first only for Harvard students, then expanded to other universities and later everyone above 13.
+            The company grew fast, added features like News Feed, attracted investments, and became the most popular social platform, even surpassing MySpace.
+            It earned money through ads and went public in 2012. Over time, Facebook bought platforms like Instagram and WhatsApp.
+            However, it faced issues like the Cambridge Analytica scandal.
+            In 2021, it rebranded to Meta to focus on virtual reality and the metaverse.
+
         </p>
     </section>
 
@@ -105,64 +108,175 @@
         </ul>
     </section>
 
-    <section id="technologies">
-        <h2>Meta Technologies</h2>
+    <section id="contributions" >
+        <h2>Meta Technologies Contributions to the IT Industry</h2>
+        <p>Meta has contibuted to IT industry in many forms such as; AI, ML, Frontend Development, Data and infrastructure, Developer Tools</p>
 
         <div class="tech-container">
-            <div class="tech-card">
-                <h3>Artificial Intelligence</h3>
-                <p>Meta develops advanced AI systems for recommendations and content moderation.</p>
+<div class="tech-card" onclick="toggleCard(this)">
+                    <h3>AI</h3>
+                 <div class="more">
+        
+            <li>
+                Llama- Family of open-source LLMs with billions of parameters
+            </li>
+            <li>
+                Segment Anything- Foundation model for image and video segmentation
+            </li>
+            <li>
+                ImageBind- AI model that learns from multiple modalities
+            </li>
+                 </div>
+        
             </div>
 
-            <div class="tech-card">
+<div class="tech-card" onclick="toggleCard(this)">
                 <h3>Machine Learning</h3>
-                <p>Machine learning improves news feed ranking and advertising systems.</p>
+                <div class="more">
+                    
+                        <li>
+                            PyTorch- Open-source deep learning framework with dynamic computation graphs
+                        </li>
+                        <li>
+                            ONNX- Interoperable format for ML models
+                        </li>
+                        <li>
+                            Flux- Machine learning infrastructure for training and serving
+                        </li>
+                </div>
+                    
             </div>
 
-            <div class="tech-card">
-                <h3>Large Language Models</h3>
-                <p>Meta created LLaMA models used in AI assistants and chatbots.</p>
+<div class="tech-card" onclick="toggleCard(this)">
+                <h3>Frontend Development</h3>
+                                <div class="more">
+                                    <li>
+                                        React- JavaScript library for declarative, component-based UIs
+                                    </li>
+                                    <li>
+                                        React Native- Framework for native mobile apps using React
+                                    </li>
+                                    <li>
+                                        Stylex- CSS-in-JS library with atomic CSS approach
+                                    </li>
+                                </div>
+
+
             </div>
 
-            <div class="tech-card">
-                <h3>React</h3>
-                <p>A JavaScript library used to build modern user interfaces.</p>
+<div class="tech-card" onclick="toggleCard(this)">
+                <h3>Data</h3>
+                                <div class="more">
+                                    <li>
+                                        PrestoDB- Distributed SQL query engine for big data
+                                    </li>
+                                    <li>
+                                        RocksDB- Embedded key-value store (LSM-tree based)
+                                    </li>
+                                    <li>
+                                        Gorilla- Time-series database for monitoring
+                                    </li>
             </div>
+</div>
 
-            <div class="tech-card">
-                <h3>PyTorch</h3>
-                <p>A deep learning framework widely used in artificial intelligence research.</p>
-            </div>
+<div class="tech-card" onclick="toggleCard(this)">
+                <h3>Infrastructure</h3>
+                                <div class="more">
+                                    <li>
+                                        HHVM- JIT runtime for PHP and Hack
+                                    </li>
+                                    <li>
+                                        Hack- Programming language built on PHP
+                                    </li>
+                                    <li>
+                                        Mcrouter- Memcached protocol router for sharding and replication
+                                    </li>
 
-            <div class="tech-card">
-                <h3>GraphQL</h3>
-                <p>A modern API query language used to efficiently request data.</p>
             </div>
+</div>
 
-            <div class="tech-card">
-                <h3>Computer Vision</h3>
-                <p>Used for photo recognition and automatic tagging in images.</p>
-            </div>
+<div class="tech-card" onclick="toggleCard(this)">
+                <h3>Developer Tools</h3>
+                                <div class="more">
+                                    <li>
+                                        Jest- JavaScript testing framework
+                                    </li>
+                                    <li>
+                                        Hermes- JavaScript engine optimized for React Native
+                                    </li>
+                                    <li>
+                                        Flow- Static type checker for JavaScript
+                                    </li>
 
-            <div class="tech-card">
-                <h3>Virtual Reality</h3>
-                <p>Meta develops VR systems like Meta Quest for immersive digital worlds.</p>
             </div>
+</div>
 
-            <div class="tech-card">
-                <h3>Data Centers</h3>
-                <p>Large global infrastructure that powers Facebook services.</p>
-            </div>
+<div class="tech-card" onclick="toggleCard(this)">
+                <h3>Security & Privacy</h3>
+                                <div class="more">
+                                    <li>
+                                        Osquery-SQL-based OS instrumentation
+                                    </li>
+                                    <li>
+                                        Sapienz- AI-powered automated testing for mobile apps
+                                    </li>
+                                    <li>
+                                        Detectron-Object detection and segmentation platform
+                                    </li>
 
-            <div class="tech-card">
-                <h3>Multimodal AI</h3>
-                <p>AI systems capable of understanding text, images and videos together.</p>
             </div>
-        </div>
+</div>
+
+<div class="tech-card" onclick="toggleCard(this)">
+                <h3>Research & Innovation</h3>
+                                <div class="more">
+                                    <li>
+                                        FAIR-AI research organization
+                                    </li>
+                                    <li>
+                                        PyTorch3D-3D deep learning library
+                                    </li>
+                                    <li>
+                                        HiPlot-High-dimensional data visualization
+                                    </li>
+
+            </div>
+</div>
+
+<div class="tech-card" onclick="toggleCard(this)">
+                <h3>AR/VR & Metaverse</h3>
+                                <div class="more">
+                                    <li>
+                                        Three.js-3D graphics library
+                                    </li>
+                                    <li>
+                                        OpenXR -Open standard for AR/VR
+                                    </li>
+                                    <li>
+                                        Codec Avatars-Realistic 3D avatars for VR
+                                    </li>
+                                    <li>
+                                        Project Aria-AR research glasses
+                                    </li>
+
+            </div>
+</div>
+
+
+    <!--
+    <section id="impact">
+        <h2>Contribution</h2>
+
+        <p>
+            Facebook helps people connect with friends and family around the world.
+            Businesses use Facebook to promote products and services globally.
+            Communities also use Facebook for education, communication and social awareness.
+        </p>
     </section>
+    -->
 
     <script>
-        
+
         function hideAll() {
             var sections = document.querySelectorAll("section");
             sections.forEach(function (section) {
@@ -170,6 +284,7 @@
             });
             document.getElementById("factBox").style.display = "none";
         }
+
 
         function showSection(id) {
             hideAll();
@@ -184,6 +299,7 @@
             "Messenger is one of the most popular messaging apps."
         ];
 
+
         function showFact() {
             hideAll();
             var number = Math.floor(Math.random() * facts.length);
@@ -191,6 +307,10 @@
             factBox.style.display = "block";
             factBox.innerHTML = facts[number];
         }
+
+        function toggleCard(card) {
+    card.classList.toggle("active");
+}
 
     </script>
 
