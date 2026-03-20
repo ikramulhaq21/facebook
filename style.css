@@ -83,3 +83,22 @@ border-radius:8px;
 .tech-card h3{
 color:#1877f2;
 }
+
+.more {
+    display: none;
+    margin-top: 10px;
+}
+
+.tech-card.active .more {
+    display: block;
+}
+
+.tech-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
